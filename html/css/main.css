@@ -1,0 +1,158 @@
+
+body{
+   padding: 0;
+   margin: 0;  
+}
+
+:root{
+    --red : #dc0000;
+    --gray: #959595;
+    --black: #333;
+    --white: #fff;
+}
+
+#logo{
+    height: 60px;
+    width: 250px;
+}
+
+.nav_right h3 {
+    color: var(--red);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.nav_right .icon_tiktok{
+   color: var(--gray);
+}
+
+@media (max-width:768px) {
+      #logo {
+         width: 40%;
+      }
+
+      .text {
+        font-size: 14px !important;
+    }
+
+    .line {
+        margin: 0px;
+    }
+}
+
+/* -------------------Titile--------------- */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.line {
+    flex: 1 1 auto;
+    height: 1px;
+    background-color: var(--red);
+    margin: 10px;
+    min-width: 40px;
+}
+
+.text {
+    color: #d32f2f;
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    white-space: normal; /* Cho phép xuống dòng nếu cần */
+    margin: 5px 0;
+}
+
+.card{
+    border: none;
+}
+
+.card_img{
+    width: 50%;
+    /* margin-left: 80px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card_img .card-img-top {
+    width: 100%; /* Make the image itself take the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* -----------------section_blog */
+.section_blog .title_blog{
+    border-bottom: 1px solid var(--black);
+    color: var(--black);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-bottom: 10px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.card_blog{
+    position: relative;
+    display: flex;
+   justify-content: center;
+}
+
+.card_blog .blog_body{
+   position: absolute;
+   bottom: -35px;
+   left: 0;
+   right: 0;
+   background-color: var(--white);
+   width: 70%;
+   border-radius: 6px;
+   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 8px;
+   z-index: 111;
+}
+
+.card_blog .blog_body h2 {
+    font-size: 14px;
+}
+
+/* ----------------Des--------------------- */
+.left_img {
+  display: flex;
+  justify-content: center; /* căn giữa toàn bộ khối */
+  align-items: center;
+  text-align: left;
+  color: #fff;
+  padding: 40px 20px;
+  background-color: var(--black);
+}
+
+.text_wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.quote {
+  position: absolute;
+  right: -40px; /* điều chỉnh khoảng cách ra ngoài */
+  top: 0;
+  font-size: 3rem;
+  color: #f0dede;
+  font-family: serif;
+}
+
+.underline {
+  width: 60px;
+  height: 1px;
+  background-color: #fff;
+  margin-top: 10px;
+}
