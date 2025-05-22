@@ -1,0 +1,244 @@
+
+body{
+   padding: 0;
+   margin: 0;  
+}
+
+:root{
+    --red : #dc0000;
+    --gray: #959595;
+    --black: #333;
+    --white: #fff;
+}
+
+#logo{
+    height: 60px;
+    width: 250px;
+}
+
+.nav_right h3 {
+    color: var(--red);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.nav_right .icon_tiktok{
+   color: var(--gray);
+   padding: 12px 0px;
+   border: 1px solid #ccc;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   border-radius: 50%;
+   width: 35px;
+   height: 35px;
+   margin: 0 4px;
+}
+
+
+.nav_feetback {
+  padding: 10px 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav_feetback:hover {
+  background-color: #f8e9e8;
+  transform: scale(1.02); 
+  border-radius: 6px;
+}
+
+@media (max-width:768px) {
+      #logo {
+         width: 30%;
+         padding-top: 10px;
+      }
+
+      .text {
+        font-size: 14px !important;
+      }
+
+        .line {
+            margin: 0px;
+        }
+
+       .nav_feetback {
+           padding: 4px 4px;
+           transition: background-color 0.3s ease, transform 0.2s ease;
+       }
+       
+       .nav_right .icon_tiktok {
+            color: var(--gray);
+            padding: 12px 0px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin: 0 2px;
+        }
+
+        h2.ms-2.text-danger.fs-4.ps-3.mt-3.mb-3{
+           padding-left: 0px !important;
+        }
+
+        .pl-5 {
+            padding-left: 16px !important;
+        }
+
+        .justify-content-end {
+            justify-content: flex-start !important;
+            padding:10px 16px 10px 16px;
+        }
+
+        /* .item{
+              grid-template-columns: 1fr;
+              grid-column: 1/ -1;
+        } */
+
+        
+}
+
+/*  --------------------Swiper-------------------*/
+.swiper {
+  width: 100%;
+  height: 500px; 
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next{
+    color:var(--white);
+    font-size: 16px !important;
+}
+
+.swiper-button-prev{
+    color: var(--white);
+    font-size: 16px !important;
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width: 30px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--red);
+}
+
+.show_map{
+    padding:8px 12px;
+    border: 1px solid var(--red);
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+.pl-5{
+   padding-left:37px;
+}
+
+.icon_rght{
+    padding: 10px 10px;
+    border:  1px solid var(--gray);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
+
+.icon_rght:hover {
+    color: var(--red);
+    border-color: var(--red);
+}
+
+/* .grid{
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr 3fr;
+    grid-template-rows: 50px 50px 50px;
+} */
+
+.icon_utilitie{
+    padding: 10px 8px;
+    border:  1px solid var(--gray);
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+}
+
+.underfine{
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.btn_search_room{
+    margin-top: 33px;
+    width: 100%;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 12px 30px;
+  align-items: center;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .title{
+     grid-column: 1/-1;
+  }
+}
+
+@media (max-width: 480px) {
+  
+
+  .show_map{
+    padding:8px 28px;
+    border: 1px solid var(--red);
+    border-radius: 50px;
+    font-size: 16px;
+     margin-top: 10px;
+  }
+
+  .address {
+     display: inline-block;
+    }
+
+.show_map {
+     display: inline-block;
+     margin-left: 8px;
+}
+
+  
+}
+
+@media (max-width: 992px) {
+    .address {
+       display: inline-block;
+    }
+
+    .show_map {
+        display: inline-block;
+        margin-left: 8px;
+    }
+}

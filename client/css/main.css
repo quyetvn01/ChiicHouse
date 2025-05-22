@@ -20,24 +20,54 @@ body{
     color: var(--red);
     font-size: 1.2rem;
     font-weight: 400;
+    margin-bottom: 0;
 }
 
 .nav_right .icon_tiktok{
    color: var(--gray);
+   padding: 12px 0px;
+   border: 1px solid #ccc;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   border-radius: 50%;
+   width: 35px;
+   height: 35px;
+   margin: 0 4px;
+}
+
+
+.nav_feetback {
+  padding: 10px 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav_feetback:hover {
+  background-color: #f8e9e8;
+  transform: scale(1.02); 
+  border-radius: 6px;
 }
 
 @media (max-width:768px) {
       #logo {
-         width: 40%;
+         width: 30%;
+         padding-top: 10px;
       }
 
       .text {
         font-size: 14px !important;
-    }
+      }
 
-    .line {
-        margin: 0px;
-    }
+        .line {
+            margin: 0px;
+        }
+
+       .nav_feetback {
+           padding: 4px 4px;
+           transition: background-color 0.3s ease, transform 0.2s ease;
+       }
+
 }
 
 /* -------------------Titile--------------- */
@@ -120,7 +150,7 @@ body{
 /* ----------------Des--------------------- */
 .left_img {
   display: flex;
-  justify-content: center; /* căn giữa toàn bộ khối */
+  justify-content: center; 
   align-items: center;
   text-align: left;
   color: #fff;
@@ -130,7 +160,8 @@ body{
 
 .text_wrap {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: 100%;
 }
 
 .text {
@@ -138,14 +169,16 @@ body{
   font-weight: bold;
   margin: 0;
   line-height: 1.6;
-  max-width: 400px;
+  /* max-width: 400px; */
+  max-width: 100%;
+  /* padding-left: 40px; */
 }
 
 .quote {
   position: absolute;
-  right: -40px; /* điều chỉnh khoảng cách ra ngoài */
+  right: 170px; /* điều chỉnh khoảng cách ra ngoài */
   top: 0;
-  font-size: 3rem;
+  font-size: 5rem;
   color: #f0dede;
   font-family: serif;
 }
@@ -155,4 +188,44 @@ body{
   height: 1px;
   background-color: #fff;
   margin-top: 10px;
+  margin-left: 41px;
+
 }
+
+@media (max-width: 575.98px) {
+  .text_wrap {
+    display: block;
+    width: 100%;
+    max-width: unset;
+  }
+
+  .text {
+    max-width: 100%;
+  }
+
+  .quote {
+    right: 35px; 
+    top: -20px;
+  }
+
+  .right_img{
+     padding: 0;
+     margin: 0;
+  }
+
+
+  .nav_right h3 {
+    color: var(--red);
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  .text {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.6;
+    max-width: 100%;
+   }
+}
+

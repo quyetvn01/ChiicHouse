@@ -1,0 +1,154 @@
+
+body{
+   padding: 0;
+   margin: 0;  
+}
+
+:root{
+    --red : #dc0000;
+    --gray: #959595;
+    --black: #333;
+    --white: #fff;
+}
+
+#logo{
+    height: 60px;
+    width: 250px;
+}
+
+.nav_right h3 {
+    color: var(--red);
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.nav_right .icon_tiktok{
+   color: var(--gray);
+   padding: 12px 0px;
+   border: 1px solid #ccc;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-decoration: none;
+   border-radius: 50%;
+   width: 35px;
+   height: 35px;
+   margin: 0 4px;
+}
+
+
+.nav_feetback {
+  padding: 10px 16px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav_feetback:hover {
+  background-color: #f8e9e8;
+  transform: scale(1.02); 
+  border-radius: 6px;
+}
+
+@media (max-width:768px) {
+      #logo {
+         width: 30%;
+         padding-top: 10px;
+      }
+
+      .text {
+        font-size: 14px !important;
+      }
+
+        .line {
+            margin: 0px;
+        }
+
+       .nav_feetback {
+           padding: 4px 4px;
+           transition: background-color 0.3s ease, transform 0.2s ease;
+       }
+       
+       .nav_right .icon_tiktok {
+            color: var(--gray);
+            padding: 12px 0px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin: 0 2px;
+        }
+
+}
+
+@media (max-width: 575.98px) {
+  .form-check {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .option_radion{
+     padding:0 30px;
+  }
+}
+
+
+.underfine{
+    border: 1px solid #ccc;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.option_review{
+    padding: 16px 10px;
+}
+
+.form_booking{
+    padding: 16px 16px;
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 1.5em;
+    margin-bottom: .125rem;
+    
+}
+
+.custom-radio-red:checked {
+  background-color: red !important;
+  border-color: red !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 0, 0, 0.25) !important;
+}
+
+
+.form-floating > label {
+     color: #000;
+     font-weight: 500;
+}
+
+.form-floating > .form-control::placeholder {
+     color: transparent;
+}
+
+.form-control:focus {
+     border-color: #ff4d4d; 
+     box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+}
+
+.form_input{
+    position: relative;
+}
+
+.form-label{
+    position: absolute;
+    top: -13px;
+    left: 13px;
+    background-color: var(--white);
+    color:var(--black);
+    font-size: 16px;
+    font-weight: 500;
+}
