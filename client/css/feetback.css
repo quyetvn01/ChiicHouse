@@ -52,21 +52,21 @@ body{
 @media (max-width:768px) {
       #logo {
          width: 30%;
-         padding-top: 10px;
+         padding-top: 16px;
       }
 
       .text {
         font-size: 14px !important;
       }
 
-        .line {
-            margin: 0px;
-        }
+      .line {
+          margin: 0px;
+      }
 
-       .nav_feetback {
-           padding: 4px 4px;
-           transition: background-color 0.3s ease, transform 0.2s ease;
-       }
+      .nav_feetback {
+          padding: 4px 4px;
+          transition: background-color 0.3s ease, transform 0.2s ease;
+      }
        
        .nav_right .icon_tiktok {
             color: var(--gray);
@@ -82,6 +82,9 @@ body{
             margin: 0 2px;
         }
 
+        .form-check_good{
+           padding-left: 48px !important;
+        }
 }
 
 @media (max-width: 575.98px) {
@@ -92,6 +95,24 @@ body{
 
   .option_radion{
      padding:0 30px;
+  }
+
+  .nav_right h3{
+     font-size: 14px;
+  }
+
+  .nav_right .icon_tiktok {
+      color: var(--gray);
+      padding: 12px 0px;
+      border: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      margin: 0 2px;
   }
 }
 
@@ -151,4 +172,8 @@ body{
     color:var(--black);
     font-size: 16px;
     font-weight: 500;
+}
+
+button.btn.btn-danger.w-100.mt-3 {
+    border-radius: 20px;
 }

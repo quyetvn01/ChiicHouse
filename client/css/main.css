@@ -52,7 +52,7 @@ body{
 @media (max-width:768px) {
       #logo {
          width: 30%;
-         padding-top: 10px;
+         padding-top: 16px;
       }
 
       .text {
@@ -67,7 +67,6 @@ body{
            padding: 4px 4px;
            transition: background-color 0.3s ease, transform 0.2s ease;
        }
-
 }
 
 /* -------------------Titile--------------- */
@@ -102,18 +101,17 @@ body{
 
 .card_img{
     width: 50%;
-    /* margin-left: 80px; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .card_img .card-img-top {
-    width: 100%; /* Make the image itself take the full width of its container */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%; 
+    height: auto; 
 }
 
-/* -----------------section_blog */
+/* -----------------section_blog------------ */
 .section_blog .title_blog{
     border-bottom: 1px solid var(--black);
     color: var(--black);
@@ -169,14 +167,13 @@ body{
   font-weight: bold;
   margin: 0;
   line-height: 1.6;
-  /* max-width: 400px; */
   max-width: 100%;
   /* padding-left: 40px; */
 }
 
 .quote {
   position: absolute;
-  right: 170px; /* điều chỉnh khoảng cách ra ngoài */
+  right: 90px; 
   top: 0;
   font-size: 5rem;
   color: #f0dede;
@@ -204,8 +201,9 @@ body{
   }
 
   .quote {
-    right: 35px; 
-    top: -20px;
+    right: 20px; 
+    top: -12px;
+    font-size: 50px;
   }
 
   .right_img{
@@ -214,18 +212,69 @@ body{
   }
 
 
+  .text-heading {
+     padding-left: 0 !important;
+     font-size: 12px !important;
+  }
+
+  .underline{
+     margin-left: 0 !important;
+  }
+ 
   .nav_right h3 {
     color: var(--red);
     font-size: 1rem;
     font-weight: 400;
   }
-
+  
   .text {
     font-size: 1rem;
     font-weight: bold;
     margin: 0;
     line-height: 1.6;
     max-width: 100%;
+    padding-left: 0px;
    }
+
+   
+   .nav_right .icon_tiktok {
+    color: var(--gray);
+    padding: 12px 0px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    margin: 0 3px;
+  }
+
+      .nav_right h3{
+          font-size: 13px;
+      }
+
+
+      .container.container-md.nav_header {
+          padding: 0 0 !important;
+      }
+}
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 30px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: var(--red);
 }
 
+.swiper-button-prev {
+    display: none;
+}
+.swiper-button-next {
+    display: none;
+}
+
+
+.text-heading{
+  padding-left:40px;
+}
